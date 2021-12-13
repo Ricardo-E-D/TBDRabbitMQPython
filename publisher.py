@@ -3,7 +3,7 @@ import pika
 # the 'requirements.txt' file is needed for this to work
 
 # Access the CLODUAMQP_URL environment variable and parse it
-params = pika.URLParameters('amqps://mhomznpp:jdDTdT3rqFFEsNtgL6XefLF8mlaTYIo8@goose.rmq2.cloudamqp.com/mhomznpp')
+params = pika.URLParameters('cloud:url')
 connection = pika.BlockingConnection(params)
 channel = connection.channel()  # start a channel
 
